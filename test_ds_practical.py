@@ -19,35 +19,35 @@ def test_unique_sorted_input_not_modified():
     assert data == [3, 2, 1, 2]
 
 
-# # ---------------------------
-# # 2. List Rotation (Advanced)
-# # ---------------------------
+# ---------------------------
+# 2. List Rotation (Advanced)
+# ---------------------------
 
-# def test_rotate_list_zero_rotation():
-#     assert rotate_list([1, 2, 3], 0) == [1, 2, 3]
+def test_rotate_list_zero_rotation():
+    assert rotate_list([1, 2, 3], 0) == [1, 2, 3]
 
-# def test_rotate_list_rotation_bigger_than_len():
-#     assert rotate_list([1, 2, 3], 5) == [3, 1, 2]
+def test_rotate_list_rotation_bigger_than_len():
+    assert rotate_list([1, 2, 3], 5) == [2, 3, 1]
 
-# def test_rotate_list_negative_rotation():
-#     assert rotate_list([1, 2, 3, 4], -1) == [4, 1, 2, 3]
+def test_rotate_list_negative_rotation():
+    assert rotate_list([1, 2, 3, 4], -1) == [4, 1, 2, 3]
 
-# def test_rotate_list_empty():
-#     assert rotate_list([], 3) == []
+def test_rotate_list_empty():
+    assert rotate_list([], 3) == []
 
 
 # # ---------------------------
 # # 3. Frequency Map (Advanced)
 # # ---------------------------
 
-# def test_char_frequency_empty_string():
-#     assert char_frequency("") == {}
+def test_char_frequency_empty_string():
+    assert char_frequency("") == {}
 
-# def test_char_frequency_case_sensitive():
-#     assert char_frequency("Aa") == {"A": 1, "a": 1}
+def test_char_frequency_case_sensitive():
+    assert char_frequency("Aa") == {"A": 1, "a": 1}
 
-# def test_char_frequency_with_spaces():
-#     assert char_frequency("a a") == {"a": 2, " ": 1}
+def test_char_frequency_with_spaces():
+    assert char_frequency("a a") == {"a": 2, " ": 1}
 
 
 # # ---------------------------
